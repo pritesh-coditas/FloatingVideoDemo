@@ -1,7 +1,7 @@
 {
   materials: [
     {
-      name: 'None',
+      name: 'DefaultMaterial',
       parameters: [
         {
           videoTexture: {
@@ -20,7 +20,7 @@
           disableChromaKey: false,
         },
       ],
-      source: 'sampledata/material.mat',
+      source: 'sampledata/chroma_key_video_material.mat',
     },
   ],
   model: {
@@ -30,8 +30,8 @@
       'Orientation',
     ],
     collision: {},
-    file: 'sampledata/video_screen.obj',
-    name: 'video_screen',
+    file: 'sampledata/chroma_key_video.obj',
+    name: 'chroma_key_video',
     recenter: 'root',
   },
   version: '0.54:2',

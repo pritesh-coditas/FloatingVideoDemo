@@ -33,11 +33,11 @@ android {
 }
 
 dependencies {
-   // implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.ar.sceneform:assets:1.17.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -46,9 +46,13 @@ dependencies {
      implementation 'com.google.ar.sceneform:rendering:1.17.1'
     implementation 'com.google.ar:core:1.36.0'
 
+    implementation 'com.google.ar.sceneform:assets:1.15.0'
 }
 
-/*sceneform.asset('sampledata/video_screen.obj',
-        'sampledata/material.mat',
-        'sampledata/video_screen.sfa',
-        'src/main/assets/video_screen')*/
+//apply plugin: 'com.google.ar.sceneform.plugin'
+
+
+sceneform.asset('sampledata/chroma_key_video.obj',
+        'sampledata/chroma_key_video_material.mat',
+        'sampledata/chroma_key_video.sfa',
+        'src/main/res/raw/chroma_key_video')
